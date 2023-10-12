@@ -7,11 +7,12 @@ import Contacts from './Contacts'
 const About = () => {
     return (
         <VStack
-            textAlign='center'
-            spacing='4em'
-            marginTop='14em'
+            height='100vh'
+            justify='center'
+            spacing='6em'
+            id='About'
         >
-            <Title name={about.name}/>
+            <Title text={about.name}/>
             <Bio bio={about.bio}/>
             <Contacts contacts={about.contacts}/>
         </VStack>

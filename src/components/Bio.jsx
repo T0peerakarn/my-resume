@@ -5,6 +5,7 @@ const Bio = ({ bio }) => {
         <Box>
             <Text
                 maxWidth='28em'
+                textAlign='center'
             >
                 {bio}
             </Text>

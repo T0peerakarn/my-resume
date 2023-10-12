@@ -1,9 +1,9 @@
 import { Box, Heading } from '@chakra-ui/react'
 
-const Title = ({ name }) => {
+const Title = ({ text }) => {
     return (
         <Box>
-            <Heading>{name}</Heading>
+            <Heading>{text}</Heading>
         </Box>
     )
 }
