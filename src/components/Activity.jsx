@@ -4,10 +4,14 @@ import ActivityDetail from './ActivityDetail'
 
 const Activity = ({ activity }) => {
     const { isOpen, onOpen, onClose } = useDisclosure()
+    const handleClick = (e) => {
+        e.preventDefault()
+        onOpen();
+    }
     return (
         <>
             <a
-                onClick={onOpen}
+                onClick={handleClick}
                 style={{ cursor: 'pointer' }}
             >
                 <Card

@@ -4,10 +4,14 @@ import AwardDetail from './AwardDetail'
 
 const Award = ({ award }) => {
     const { isOpen, onOpen, onClose } = useDisclosure()
+    const handleClick = (e) => {
+        e.preventDefault()
+        onOpen();
+    }
     return (
         <>
             <a
-                onClick={onOpen}
+                onClick={handleClick}
                 style={{ cursor: 'pointer' }}
             >
                 <Card

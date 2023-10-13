@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 import { navbar } from './contents/navbar'
-import { ChakraProvider } from '@chakra-ui/react'
+import { ChakraProvider, extendTheme } from '@chakra-ui/react'
 import Navbar from './components/Navbar'
 import About from './components/About'
 import Education from './components/Education'
@@ -39,9 +39,18 @@ const App = () => {
             observer.disconnect();
         };
     }, [])
+
+    const breakpoints = {
+        base: "0px",
+        sm: "700px",
+        md: "1024px",
+        "2xl": "1536px",
+    };
     
+    const theme = extendTheme({ breakpoints })
+
     return (
-        <ChakraProvider>
+        <ChakraProvider theme={theme}>
             <Navbar current={current} setCurrent={setCurrent} />
             <About />
             <Education />

@@ -4,10 +4,14 @@ import InternshipDetail from './InternshipDetail'
 
 const Internship = ({ internship }) => {
     const { isOpen, onOpen, onClose } = useDisclosure()
+    const handleClick = (e) => {
+        e.preventDefault()
+        onOpen();
+    }
     return (
         <>
             <a
-                onClick={onOpen}
+                onClick={handleClick}
                 style={{ cursor: 'pointer' }}
             >
                 <Card
