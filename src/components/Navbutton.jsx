@@ -10,7 +10,10 @@ const Navbutton = ({ section, current, setCurrent }) => {
             width='fixed'
             display='flex'
             justifyContent='center'
-            margin='auto 1vw'
+            margin={{
+                base: 'auto',
+                sm: 'auto 1em'
+            }}
         >
             <a href={href} onClick={() => setCurrent(section.id)} className={className}>
                 <Text

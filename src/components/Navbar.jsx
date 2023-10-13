@@ -10,7 +10,10 @@ const Navbar = ({ current, setCurrent }) => {
             width='100vw'
             height='7vh'
             backgroundColor='black'
-            justifyContent='right'
+            justifyContent={{
+                base: 'center',
+                sm: 'right'
+            }}
             zIndex='999'
         >
             {navbar.map((section, i) => 
