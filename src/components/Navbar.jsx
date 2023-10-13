@@ -2,7 +2,7 @@ import { navbar } from '../contents/navbar'
 import { Flex } from '@chakra-ui/react'
 import Navbutton from './Navbutton.jsx'
 
-const Navbar = () => {
+const Navbar = ({ current, setCurrent }) => {
     return (
         <Flex
             as='header'
@@ -11,8 +11,17 @@ const Navbar = () => {
             height='7vh'
             backgroundColor='black'
             justifyContent='right'
+            zIndex='999'
         >
-            {navbar.map((section, i) => <Navbutton key={i} section={section}/>)}
+            {navbar.map((section, i) => 
+                <Navbutton 
+                    key={i}
+                    section={section}
+                    current={current} 
+                    setCurrent={setCurrent}
+                />
+            )}
+            
         </Flex>
     )
 }

@@ -1,7 +1,7 @@
 import { education } from '../contents/education'
 import { Container } from '@chakra-ui/react'
 import Title from './Title'
-import Schools from './Schools'
+import SchoolsList from './SchoolsList'
 
 const Education = () => {
     return (
@@ -12,7 +12,7 @@ const Education = () => {
             id='Education'
         >
             <Title text="Education"/>
-            <Schools schools={education.schools}/>
+            <SchoolsList schools={education.schools}/>
         </Container>
     )
 }

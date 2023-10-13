@@ -1,13 +1,13 @@
 import { VStack, StackDivider, Card, CardBody, Heading, Text, Box } from '@chakra-ui/react'
 
-const School = ({ school }) => {
+const Research = ({ research }) => {
     return (
         <a
-            href={school.link}
+            href={research.link}
             target='_blank'
         >
             <Card
-                height='16em'
+                height='15em'
                 width='20em'
                 transition='0.2s'
                 _hover={{ boxShadow: 'lg' }}
@@ -19,18 +19,17 @@ const School = ({ school }) => {
                         <Box>
                             <Heading
                                 fontSize='1em'
-                                height='2.5em'
                             >
-                                {school.name}
+                                {research.name}
                             </Heading>
                             <Text
                                 fontSize='0.8em'
                                 color='#718096'
                             >
-                                {school.year}
+                                {research.year}
                             </Text>
                         </Box>
-                        <Text fontSize='1em'>{school.bio}</Text>
+                        <Text fontSize='1em'>{research.bio}</Text>
                     </VStack>
                 </CardBody>
             </Card>
@@ -38,4 +37,4 @@ const School = ({ school }) => {
     )
 }
 
-export default School
+export default Research

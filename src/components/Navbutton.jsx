@@ -1,22 +1,26 @@
 import { Box, Text } from '@chakra-ui/react'
+import '../assets/styles.css'
 
-const Navbutton = ({ section }) => {
-    const href = '#'.concat(String(section))
+const Navbutton = ({ section, current, setCurrent }) => {
+    const className = (current === section.name) ? 'navbutton clicked' : 'navbutton'
+    const href = '#'.concat(section.name)
+
     return (
         <Box
-            width='auto'
+            width='fixed'
             display='flex'
             justifyContent='center'
             margin='auto 1vw'
         >
-            <a href={href}>
+            <a href={href} onClick={() => setCurrent(section.id)} className={className}>
                 <Text
                     textDecoration='none'
                     color='white'
-                    fontSize='1.2em'
+                    fontSize='1em'
                     fontWeight='bold'
+                    transition='0.2s'
                 >
-                    {String(section)}
+                    {section.name}
                 </Text>
             </a>
         </Box>
