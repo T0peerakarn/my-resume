@@ -4,9 +4,13 @@ import Award from './Award'
 const AwardsList = ({ awards }) => {
     return (
         <Grid
-            templateColumns='repeat(3, 1fr)'
-            templateRows='repeat(2, 1fr)'
+            templateColumns={{
+                base: 'repeat(1, 1fr)',
+                sm: 'repeat(2, 1fr)',
+                md: 'repeat(3, 1fr)'
+            }}
             justifyContent='center'
+            justifyItems='center'
             paddingTop='8vh'
             gap='1em'
         >

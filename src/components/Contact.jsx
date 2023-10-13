@@ -8,8 +8,14 @@ const Contact = ({ icon, link }) => {
         >
             <Box
                 as={icon}
-                boxSize='2.5em'
-                marginLeft='1.5em'
+                boxSize={{
+                    base: '2em',
+                    sm: '2.5em'
+                }}
+                marginLeft={{
+                    base: '0.8em',
+                    sm: '1.5em'
+                }}
                 marginRight='1.5em'
             />
         </a>

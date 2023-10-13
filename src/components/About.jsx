@@ -9,8 +9,9 @@ const About = () => {
         <VStack
             height='100vh'
             justify='center'
-            spacing='6em'
+            spacing='6vw'
             id='About'
+            padding='1.5em'
         >
             <Title text={about.name}/>
             <Bio bio={about.bio}/>

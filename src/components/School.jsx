@@ -2,15 +2,15 @@ import { VStack, StackDivider, Card, CardBody, Heading, Text, Box } from '@chakr
 
 const School = ({ school }) => {
     return (
-        <a
-            href={school.link}
-            target='_blank'
+        <Card
+            height='16em'
+            width='20em'
+            transition='0.2s'
+            _hover={{ boxShadow: 'lg' }}
         >
-            <Card
-                height='16em'
-                width='20em'
-                transition='0.2s'
-                _hover={{ boxShadow: 'lg' }}
+            <a
+                href={school.link}
+                target='_blank'
             >
                 <CardBody>
                     <VStack
@@ -33,8 +33,8 @@ const School = ({ school }) => {
                         <Text fontSize='1em'>{school.bio}</Text>
                     </VStack>
                 </CardBody>
-            </Card>
-        </a>
+            </a>
+        </Card>
     )
 }
 

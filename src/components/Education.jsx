@@ -6,7 +6,10 @@ import SchoolsList from './SchoolsList'
 const Education = () => {
     return (
         <Container
-            height='100vh'
+            height={{
+                base: '150vh',
+                sm: '100vh'
+            }}
             textAlign='center'
             paddingTop='20vh'
             id='Education'

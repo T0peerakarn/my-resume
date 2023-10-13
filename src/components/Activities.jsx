@@ -5,7 +5,7 @@ import ActivitiesList from './ActivitiesList'
 const Activities = ({ activities }) => {
     return (
         <Container>
-            <SubTitle text='Internship' />
+            <SubTitle text='Activity' />
             <ActivitiesList activities={activities} />
         </Container>
     )
