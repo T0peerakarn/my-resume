@@ -5,7 +5,7 @@ import ResearchesList from './ResearchesList'
 const Researches = ({ researches }) => {
     return (
         <Container>
-            <SubTitle text='Reseach' />
+            <SubTitle text='Research' />
             <ResearchesList researches={researches} />
         </Container>
     )
