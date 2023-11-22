@@ -33,6 +33,12 @@ export const experiences = {
     ],
     activities: [
         {
+            name: 'SIIT Insight Camp 2024',
+            year: '2024',
+            role: 'President',
+            bio: 'The SIIT Insight Camp is an open house event designed specifically for high school students interested in exploring the academic and extracurricular offerings at the SIIT, Thammasat University.'
+        },
+        {
             name: 'SIIT Student Committee 30',
             year: '2023',
             role: 'President',
