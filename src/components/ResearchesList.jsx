@@ -5,7 +5,7 @@ const ResearchesList = ({ researches }) => {
     return (
         <Grid
             justifyContent='center'
-            paddingTop='2vh'
+            paddingTop='3vh'
             gap='1em'
         >
             {researches.map((research, i) => <Research key={i} research={research}/>)}

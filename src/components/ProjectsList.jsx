@@ -5,7 +5,7 @@ const ProjectsList = ({ projects }) => {
     return (
         <Grid
             justifyContent='center'
-            paddingTop='2vh'
+            paddingTop='3vh'
             gap='1em'
             templateColumns={{
                 base: 'repeat(1, 1fr)',
