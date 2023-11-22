@@ -7,31 +7,39 @@ const Project = ({ project }) => {
             target='_blank'
         >
             <Card
-                height='10em'
+                height='11em'
                 width='20em'
                 transition='0.2s'
                 _hover={{ boxShadow: 'lg' }}
             >
                 <CardBody>
-                    <VStack
-                        divider={<StackDivider />}
-                    >
-                        <Box>
-                            <Heading
-                                fontSize='1em'
-                            >
-                                {project.name}
-                            </Heading>
+                        <VStack
+                            divider={<StackDivider />}
+                        >
+                            <Box>
+                                <Heading
+                                    fontSize='1em'
+                                    height='3em'
+                                >
+                                    {project.name}
+                                </Heading>
+                                <Text
+                                    fontSize='0.8em'
+                                    color='#718096'
+                                    marginTop='1em'
+                                >
+                                    {project.year}
+                                </Text>
+                            </Box>
                             <Text
-                                fontSize='0.8em'
-                                color='#718096'
+                                fontSize='1em'
+                                fontWeight='bold'
+                                color='#4A5568'
                             >
-                                {project.year}
+                                {project.role}
                             </Text>
-                        </Box>
-                        <Text fontSize='1em' fontWeight='bold' color='#4A5568'>{project.role}</Text>
-                    </VStack>
-                </CardBody>
+                        </VStack>
+                    </CardBody>
             </Card>
         </a>
     )
