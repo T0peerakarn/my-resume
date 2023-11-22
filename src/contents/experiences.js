@@ -17,6 +17,20 @@ export const experiences = {
             bio: 'As a trainee, I apply machine learning techniques to predict friction factors in drilling operations'
         }
     ],
+    projects: [
+        {
+            name: 'BookBorrow',
+            year: '2023',
+            role: 'Fullstack Developer & UI Designer',
+            link: 'https://github.com/T0peerakarn/BookBorrow'
+        },
+        {
+            name: 'Optimization of Binary Randomized Response by Using Normal Distribution Filter',
+            year: '2021',
+            role: 'Researcher',
+            link: 'https://my99n-cv.vercel.app/ranres.pdf'
+        }
+    ],
     activities: [
         {
             name: 'SIIT Student Committee 30',

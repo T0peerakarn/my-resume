@@ -4,6 +4,7 @@ import Title from './Title'
 import Researches from './Researches'
 import Internships from './Internships'
 import Activities from './Activities'
+import Projects from './Projects'
 
 const Experiences = () => {
     return (
@@ -16,6 +17,7 @@ const Experiences = () => {
             <Title text="Experiences" />
             <Researches researches={experiences.researches} />
             <Internships internships={experiences.internships} />
+            <Projects projects={experiences.projects} />
             <Activities activities={experiences.activities} />
         </Container>
     )
