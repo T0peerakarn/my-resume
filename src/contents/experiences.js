@@ -19,6 +19,12 @@ export const experiences = {
     ],
     projects: [
         {
+            name: 'Authentication System Using RSA Encryption',
+            year: '2024',
+            role: 'Fullstack Developer',
+            link: 'https://github.com/T0peerakarn/authentication-rsa'
+        },
+        {
             name: 'BookBorrow',
             year: '2023',
             role: 'Fullstack Developer & UI Designer',
