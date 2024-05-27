@@ -11,6 +11,12 @@ export const experiences = {
     ],
     internships: [
         {
+            name: 'LINE MAN Wongnai Junior 2024 program',
+            year: '2024',
+            role: 'Software Engineer - Frontend',
+            bio: 'To be updated'
+        },
+        {
             name: 'Chevron Internship Program 2023',
             year: '2023',
             role: 'Data Scientist',
